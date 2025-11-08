@@ -1,21 +1,20 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  // Ini adalah bagian PENTING.
-  // Ini memberi tahu Tailwind untuk memindai semua file JSX dan HTML
-  // untuk mencari class yang Anda gunakan.
+  // Memberi tahu Tailwind untuk memindai semua file JSX dan HTML
+  // untuk mencari class yang digunakan.
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       fontFamily: {
-        sans: ['"Inter"', "sans-serif"], // Font modern yang bersih
+        sans: ['"Inter"', "sans-serif"],
       },
       colors: {
         sky: {
-          700: "#0369a1", // Biru utama
+          700: "#0369a1",
           800: "#075985",
-          900: "#0c4a6e", // Biru tua
-          300: "#7dd3fc", // Teks highlight
-          400: "#38bdf8", // Hover highlight
+          900: "#0c4a6e",
+          300: "#7dd3fc",
+          400: "#38bdf8",
         },
       },
       backgroundImage: {
@@ -23,7 +22,7 @@ module.exports = {
       },
     },
   },
-  // Ini adalah bagian untuk plugin
+  // Plugin
   plugins: [
     require("tailwind-scrollbar"), // Plugin untuk styling scrollbar
   ],
