@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base style untuk scroll-behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-sky-900 text-slate-200 font-sans tracking-wide;
+}
+
+/* Custom styling untuk Swiper (Carousel) agar sesuai tema */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #7dd3fc !important; /* text-sky-300 */
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #7dd3fc !important; /* bg-sky-300 */
+}
+
+.swiper-pagination-bullet {
+  background-color: #f1f5f9 !important; /* bg-slate-100 */
+  opacity: 0.7;
+}
+
+/* Custom scrollbar (opsional, tapi keren) */
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  @apply bg-sky-900;
+}
+
+body::-webkit-scrollbar-thumb {
+  @apply bg-sky-700 rounded-full border-4 border-sky-900;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  @apply bg-sky-400;
+}
