@@ -3,6 +3,8 @@ import { motion } from 'framer-motion'
 import fetchAllData from '../api/restAPI.jsx'
 
 import Navbar  from '../components/Navbar.jsx'
+import Hero from '../components/Hero.jsx'
+import About from '../components/About.jsx'
 
 function Home () {
   const [profile, setProfile] = useState(null)
@@ -46,7 +48,11 @@ function Home () {
         transition={{ duration: .5}}
       >
         {/* Hero */}
+        <Hero profile={profile} socials={socials} />
+        
         {/* About */}
+        <About profile={profile} />
+
         {/* Gallery */}
       </motion.main>
 
