@@ -8,7 +8,11 @@ html {
 }
 
 body {
-  @apply bg-sky-900 text-slate-200 font-sans tracking-wide;
+  /* Replaced @apply with explicit CSS to avoid PostCSS @apply resolution issues */
+  background-color: #0c4a6e; /* sky-900 */
+  color: #e2e8f0; /* slate-200 */
+  font-family: "Inter", sans-serif;
+  letter-spacing: 0.02em;
 }
 
 /* Custom styling untuk Swiper (Carousel) agar sesuai tema */
@@ -26,19 +30,28 @@ body {
   opacity: 0.7;
 }
 
-/* Custom scrollbar (opsional, tapi keren) */
-body::-webkit-scrollbar {
-  width: 12px;
-}
+/* Custom scrollbar menggunakan tailwind-scrollbar-hide */
+@layer utilities {
+  .scrollbar-custom {
+    scrollbar-width: thin;
+    scrollbar-color: #0369a1 #0c4a6e;
+  }
 
-body::-webkit-scrollbar-track {
-  @apply bg-sky-900;
-}
+  .scrollbar-custom::-webkit-scrollbar {
+    width: 12px;
+  }
 
-body::-webkit-scrollbar-thumb {
-  @apply bg-sky-700 rounded-full border-4 border-sky-900;
-}
+  .scrollbar-custom::-webkit-scrollbar-track {
+    background: #0c4a6e;
+  }
 
-body::-webkit-scrollbar-thumb:hover {
-  @apply bg-sky-400;
+  .scrollbar-custom::-webkit-scrollbar-thumb {
+    background-color: #0369a1;
+    border-radius: 9999px;
+    border: 4px solid #0c4a6e;
+  }
+
+  .scrollbar-custom::-webkit-scrollbar-thumb:hover {
+    background-color: #38bdf8;
+  }
 }

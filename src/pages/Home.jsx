@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import { fetchAllData } from '../api/restAPI.jsx'
+import fetchAllData from '../api/restAPI.jsx'
 
+import Navbar  from '../components/Navbar.jsx'
 
 function Home () {
   const [profile, setProfile] = useState(null)
@@ -36,7 +37,8 @@ function Home () {
   return (
     <div className="bg-sky-900 scroll-smooth">
       {/* Navbar */}
-      
+      <Navbar />
+
       {/* Main content di wrap dgn motion.div utk fade in */}
       <motion.main
         initial={{ opacity: 0}}
