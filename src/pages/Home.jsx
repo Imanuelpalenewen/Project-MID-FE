@@ -5,6 +5,7 @@ import fetchAllData from '../api/restAPI.jsx'
 import Navbar  from '../components/Navbar.jsx'
 import Hero from '../components/Hero.jsx'
 import About from '../components/About.jsx'
+import Gallery from '../components/Gallery.jsx'
 
 function Home () {
   const [profile, setProfile] = useState(null)
@@ -54,6 +55,8 @@ function Home () {
         <About profile={profile} />
 
         {/* Gallery */}
+        <Gallery gallery={gallery} />.
+
       </motion.main>
 
       {/* Footer */}

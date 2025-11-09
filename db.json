@@ -1,12 +1,17 @@
 {
   "profile": {
     "name": "Imanuel Palenewen",
-    "title": "Junior Frontend Developer",
+    "title": "Student of Computer Science",
     "bio": "A passionate learner exploring UI/UX and modern web design. Currently mastering React and Tailwind CSS to build beautiful, responsive web applications.",
     "photo": "/noel-profil.jpg"
   },
   "gallery": [
-    { "id": 1, "url": "public/gallery/photo1.jpg", "alt": "Deskripsi foto 1" }
+    { "id": 1, "url": "/gallery/photo1.jpg", "alt": "Deskripsi foto 1" },
+    { "id": 2, "url": "/gallery/photo2.jpg", "alt": "Deskripsi foto 2" },
+    { "id": 3, "url": "/gallery/photo3.jpg", "alt": "Deskripsi foto 3" },
+    { "id": 4, "url": "/gallery/photo4.jpg", "alt": "Deskripsi foto 4" },
+    { "id": 5, "url": "/gallery/photo5.jpg", "alt": "Deskripsi foto 5" },
+    { "id": 6, "url": "/gallery/photo6.jpg", "alt": "Deskripsi foto 6" }
     
   ],
   "socials": [
