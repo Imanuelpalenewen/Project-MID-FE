@@ -22,13 +22,12 @@ function Footer({ profile, socials }) {
               Let's Connect
             </h3>
             <a 
-              href={`${profile.urlToGmail}${profile.email}`}
+              href={`${urlToGmail}${profile.email}`}
               className="text-lg text-sky-300 hover:text-sky-400 transition-colors duration-300"
               target="_blank"
               rel="noopener noreferrer"
               id="contact"
             >
-              imanuelpalenewen15@gmail.com
               {profile.email}
             </a>
           </div>
