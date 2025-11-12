@@ -3,7 +3,8 @@
     "name": "Imanuel Palenewen",
     "title": "Student of Computer Science",
     "bio": "A passionate learner exploring UI/UX and modern web design. Currently mastering React and Tailwind CSS to build beautiful, responsive web applications.",
-    "photo": "/noel-profil.jpg"
+    "photo": "/noel-profil.jpg",
+    "email": "imanuelpalenewen15@gmail.com"
   },
   "gallery": [
     { "id": 1, "url": "/gallery/photo1.jpg", "alt": "Deskripsi foto 1" },

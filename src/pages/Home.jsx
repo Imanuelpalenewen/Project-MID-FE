@@ -6,6 +6,7 @@ import Navbar  from '../components/Navbar.jsx'
 import Hero from '../components/Hero.jsx'
 import About from '../components/About.jsx'
 import Gallery from '../components/Gallery.jsx'
+import Footer from '../components/Footer.jsx'
 
 function Home () {
   const [profile, setProfile] = useState(null)
@@ -60,6 +61,7 @@ function Home () {
       </motion.main>
 
       {/* Footer */}
+      <Footer profile={profile} socials={socials} />
     </div>
   )
 }

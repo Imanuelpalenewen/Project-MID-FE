@@ -5,6 +5,8 @@ import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa"
 function Hero ({ profile, socials}) {
   if (!profile) return null
 
+  const urlToGmail = "https://mail.google.com/mail/?view=cm&fs=1&to="
+
   const getSocialIcon = (name) => {
     if (name === "GitHub") return <FaGithub />
     if (name === "LinkedIn") return <FaLinkedin />
@@ -49,14 +51,15 @@ function Hero ({ profile, socials}) {
 
         <motion.div {...fadeIn(0.8)}>
           <a 
-          href="mailto:imanuelpalenewen15@gmail.com"
+          href={`${urlToGmail}${profile.email}`}
           className='inline-block bg-sky-300 text-sky-900 font-bold text-lg px-8 py-3 rounded-full shadow-lg hover:bg-sky-400 hover:scale-105 transform transition-all duration-300 ease-in-out'
+          target="_blank"
+          rel="noopener noreferrer"
           >
             Contact Me
           </a>
         </motion.div>
 
-        {/* Ikon sosmed */}
         <motion.div className='flex justify-center space-x-6 mt-10'
         {...fadeIn(1.0)}
         >

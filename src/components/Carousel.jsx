@@ -1,11 +1,10 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Pagination, Navigation, Autoplay, EffectFade } from 'swiper/modules'
+import { Pagination, Navigation, Autoplay } from 'swiper/modules'
 import { motion } from 'framer-motion'
 
 
 function Carousel ({ gallery }) {
-  console.log('Gallery props received:', gallery) // Debug log
   return (
     <Swiper
       modules={[Pagination, Navigation, Autoplay]}

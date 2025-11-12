@@ -28,7 +28,6 @@ function Gallery ({ gallery }) {
           My Gallery
         </h2>
 
-        {/* panggil Carousel dan kirim data gallery */}
         <Carousel gallery={gallery} />
       
       </div>

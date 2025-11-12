@@ -85,9 +85,9 @@ function Navbar () {
       {/* Menu Mobile */}
       <motion.div
         className='md:hidden absolute top-20 left-0 right-0 bg-sky-800 shadow-lg overflow-hidden'
-        initial= {false}
-        animate= {isOpen ? "open" : "closed"}
-        transition= {mobileMenuVariants}
+        initial="closed"
+        animate={isOpen ? "open" : "closed"}
+        variants={mobileMenuVariants}
       >
         <div className="flex flex-col px-4 pt-2 pb-6 space-y-3">
           {navLinks.map((link) => (
