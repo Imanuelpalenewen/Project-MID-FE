@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { HiMenu, HiX } from 'react-icons/hi' // hamburger icon utk mobile
 
-function Navbar () {
+const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
 
@@ -12,13 +12,13 @@ function Navbar () {
     { title: "Gallery", href: "#gallery"},
     { title: "Contact", href: "#contact"}, // menuju ke Hero (khusus tombol "Contact Me")
   ] 
-
+  
   useEffect( () => {
     const handleScroll = () => {
       // jika scroll lebih dari 10px, set isScrolled jadi True
       setIsScrolled(window.scrollY > 10)
     }
-
+9
     window.addEventListener('scroll', handleScroll)
     return () => {
       window.removeEventListener('scroll', handleScroll)

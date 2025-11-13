@@ -2,7 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import Carousel from './Carousel'
 
-function Gallery ({ gallery }) {
+const Gallery = ({ gallery }) => {
   if(!gallery || gallery.length === 0) return null
 
   const scrollReveal = {

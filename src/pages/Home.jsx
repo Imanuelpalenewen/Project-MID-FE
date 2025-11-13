@@ -8,7 +8,7 @@ import About from '../components/About.jsx'
 import Gallery from '../components/Gallery.jsx'
 import Footer from '../components/Footer.jsx'
 
-function Home () {
+const Home = () => {
   const [profile, setProfile] = useState(null)
   const [gallery, setGallery] = useState([])
   const [socials, setSocials] = useState([])

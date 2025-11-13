@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 
-function About ({ profile }) {
+const About = ({ profile }) =>{
   if (!profile) return null
 
   const scrollReveal = {

@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa'
 
-function Footer({ profile, socials }) {
+const Footer = ({ profile, socials }) => {
 
   const urlToGmail = "https://mail.google.com/mail/?view=cm&fs=1&to="
 

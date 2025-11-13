@@ -2,7 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa"
 
-function Hero ({ profile, socials}) {
+const Hero = ({ profile, socials }) => {
   if (!profile) return null
 
   const urlToGmail = "https://mail.google.com/mail/?view=cm&fs=1&to="

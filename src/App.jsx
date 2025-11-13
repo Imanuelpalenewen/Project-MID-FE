@@ -2,7 +2,7 @@ import React from 'react'
 import Home from './pages/Home.jsx'
 
 
-function App() {
+const App = () => {
   return (
     <Home />
   )

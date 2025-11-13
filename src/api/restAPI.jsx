@@ -1,6 +1,6 @@
 import axios from "axios"
 
-const url_api = "http://localhost:3001"
+const url_api = "http://localhost:3000"
 
 const fetchAllData = async () => {
   try {
@@ -22,3 +22,4 @@ const fetchAllData = async () => {
 }
 
 export default fetchAllData
+

@@ -4,8 +4,8 @@ import { Pagination, Navigation, Autoplay } from 'swiper/modules'
 import { motion } from 'framer-motion'
 
 
-function Carousel ({ gallery }) {
-  return (
+const Carousel = ({ gallery }) => {
+  return (  
     <Swiper
       modules={[Pagination, Navigation, Autoplay]}
       slidesPerView={1}
@@ -21,7 +21,7 @@ function Carousel ({ gallery }) {
       navigation={true}
       className="w-full max-w-4xl mx-auto rounded-lg shadow-2xl"
       breakpoints={{
-        // Responsive 
+        // Responsive
         640: {
           slidesPerView: 2,
           spaceBetween: 20,
